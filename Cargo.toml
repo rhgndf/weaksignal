@@ -1,0 +1,20 @@
+[package]
+name = "weaksignal"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hound = "3.5.1"
+realfft = "3.3.0"
+regex = "1.10.2"
+rustfft = "6.1.0"
+static_init = "1.0.3"
+
+[profile.release]
+debug = true
+
+[[bin]]
+name = "ft8_decode"
+path = "src/bin.rs"
